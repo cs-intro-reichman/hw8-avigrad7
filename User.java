@@ -56,6 +56,7 @@
         if (follows(name) || fCount == maxfCount) {
             return false;
         }
+        name = name.substring(0, 1).toUpperCase() + name.substring(1).toUpperCase();
         follows[fCount] = name;
         fCount++;
         return true;
