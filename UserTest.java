@@ -16,7 +16,7 @@ public class UserTest {
         String expected = "true";
         String actual = "";
         try {
-            actual += (alice.addFollowee("Foo") && !alice.addFollowee("Foo") && alice.getfCount() == 1 && alice.follows("Foo"));
+            actual += (alice.addFollowee("Foo") && !alice.addFollowee("foo") && alice.getfCount() == 1 && alice.follows("Foo"));
         } catch (Exception e) {
             actual = TesterMessagesEnum.ERROR + e.getMessage();
         }
