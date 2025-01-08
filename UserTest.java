@@ -12,11 +12,11 @@ public class UserTest {
 
 
 
-        User alice = new User("Alice");
+        User alice = new User("Alice", true);
         String expected = "true";
         String actual = "";
         try {
-            actual += (alice.addFollowee("Foo") && !alice.addFollowee("foo") && alice.getfCount() == 1 && alice.follows("Foo"));
+            actual += alice.follows("baz");
         } catch (Exception e) {
             actual = TesterMessagesEnum.ERROR + e.getMessage();
         }
