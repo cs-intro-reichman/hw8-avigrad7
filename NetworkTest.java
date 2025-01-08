@@ -25,7 +25,7 @@ public class NetworkTest {
         net.addUser("Or");
         net.addUser("Uri");
         net.addUser("Maya");
-        
+
         System.out.println("\n...Adding follows relationships...");
         net.addFollowee("Alex", "Keren");
         net.addFollowee("Alex", "Neta");
@@ -37,6 +37,9 @@ public class NetworkTest {
         net.addFollowee("Idan", "Or");
         net.addFollowee("Idan", "Zohar");
         net.addFollowee("Idan", "Neta");
+
+
+        net.addFollowee("Alex", "Alex");
 
         System.out.println(net);
 
